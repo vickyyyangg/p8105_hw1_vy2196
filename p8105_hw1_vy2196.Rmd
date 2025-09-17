@@ -1,0 +1,14 @@
+---
+title: "p8105_hw1_vy2196"
+output: github_document
+
+---
+
+### Problem 1
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(moderndive)   # load the package
+data("early_january_weather")  # load dataset
+head(early_january_weather) #first few rows and columns of data
+```
