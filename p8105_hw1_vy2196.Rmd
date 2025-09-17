@@ -12,3 +12,21 @@ library(moderndive)   # load the package
 data("early_january_weather")  # load dataset
 head(early_january_weather) #first few rows and columns of data
 ```
+
+#### Data description
+The `early_january_weather` dataset contains `r nrow(early_january_weather)` rows and `r ncol(early_january_weather)` columns. 
+
+It includes hourly weather observations from New York City in early January 2013. 
+Key variables include:
+
+- `time_hour`: the date-time of observation  
+- `temp`: temperature in Fahrenheit  
+- `humid`: relative humidity (0–100)  
+- `wind_dir`: wind direction
+- `wind_speed`: wind speed in mph  
+- `visib`: visibility in miles  
+- plus other variables describing conditions such as `pressure`and `origin`.
+
+The mean temperature during this period was 
+`r round(mean(early_january_weather$temp, na.rm = TRUE), 1)` °F.
+ 
