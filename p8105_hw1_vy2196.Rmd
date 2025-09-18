@@ -67,3 +67,16 @@ df
 ```
 
 
+```{r}
+library(tidyverse)
+
+mean(pull(df, num_var))   
+mean(pull(df, log_var))  
+mean(pull(df, char_var))  
+mean(pull(df, fact_var)) 
+
+```
+
+The `pull` function works for taking the average of the numbers and logical vectors since it's stored as 1s or 0s. However, it shows an error message for both character vector and factor vector. Character vector is not stored as numeric values, so there will be no numbers to average. Factor vector is internally stored as integers, but `mean()` doesn't automatically use it unless explicitly said to. 
+
+
