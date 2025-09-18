@@ -54,3 +54,16 @@ ggsave("scatterplot_temp_vs_time.png", plot = p, width = 7, height = 4)
 ##### Descriptions of the graph's pattern
 The scatter plot shows a gradual increase in temperature over the next two weeks starting from January 1st. There was a big temperature difference in the beginning of January and then it slowly decreased and increased by mid-January. The humidity also increased comparing to early January from 40s to approaching 100 toward mid-January. 
 
+### Problem 2
+
+```{r}
+set.seed(123)  # for reproducibility
+num_var <- rnorm(10)
+log_var <- num_var > 0
+char_var <- c("a","b","c","d","e","f","g","h","i","j")
+fact_var <- factor(rep(c("low", "medium", "high"), length.out = 10))
+df <- data.frame(num_var, log_var, char_var, fact_var)
+df
+```
+
+
