@@ -54,6 +54,3 @@ ggsave("scatterplot_temp_vs_time.png", plot = p, width = 7, height = 4)
 ##### Descriptions of the graph's pattern
 The scatter plot shows a gradual increase in temperature over the next two weeks starting from January 1st. There was a big temperature difference in the beginning of January and then it slowly decreased and increased by mid-January. The humidity also increased comparing to early January from 40s to approaching 100 toward mid-January. 
 
-
-The scatterplot of temperature vs. time shows that temperatures generally fluctuate between ~35°F and 55°F during early January 2013. Humidity (shown by color) is often higher during cooler temperatures, while warmer temperatures tend to occur with lower humidity. The cyclical pattern suggests daily variation, with temperatures dipping at night and rising during the day.  
- 
